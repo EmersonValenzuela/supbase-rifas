@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo circular con gradiente -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ticketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)"/>
+  
+  <!-- Ticket de rifa -->
+  <g transform="translate(50, 50) rotate(-15)">
+    <!-- Cuerpo del ticket -->
+    <rect x="-25" y="-18" width="50" height="36" rx="4" fill="url(#ticketGradient)" stroke="#667eea" stroke-width="2"/>
+    
+    <!-- Línea de perforación izquierda -->
+    <line x1="-20" y1="-18" x2="-20" y2="18" stroke="#667eea" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+    
+    <!-- Números del ticket -->
+    <text x="-8" y="2" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#667eea" text-anchor="middle">7</text>
+    <text x="8" y="2" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#764ba2" text-anchor="middle">7</text>
+    
+    <!-- Estrella decorativa -->
+    <path d="M -12,-8 L -10,-4 L -6,-4 L -9,-1 L -8,3 L -12,0 L -16,3 L -15,-1 L -18,-4 L -14,-4 Z" fill="#fbbf24" opacity="0.8"/>
+    
+    <!-- Estrella decorativa derecha -->
+    <path d="M 20,-8 L 22,-4 L 26,-4 L 23,-1 L 24,3 L 20,0 L 16,3 L 17,-1 L 14,-4 L 18,-4 Z" fill="#fbbf24" opacity="0.8"/>
+  </g>
+  
+  <!-- Borde exterior -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+</svg>
