@@ -514,7 +514,7 @@ const VistaPublica = ({ vendedores, numerosVendidos }) => {
       <div className="content-wrapper">
         <div className="header-card">
           <div className="header-content">
-            <div className="badge">📅 Sorteo: Domingo 30 de Noviembre, 2025</div>
+            <div className="badge">📅 Sorteo: Domingo 05 de Diciembre, 2025</div>
             <h1 className="title">Gran Rifa Pro Ayuda Social</h1>
             <p className="subtitle">¡Participa y gana increíbles premios! 🎁</p>
             <div className="info-row">
@@ -582,11 +582,6 @@ const VistaPublica = ({ vendedores, numerosVendidos }) => {
               );
             })}
           </div>
-        </div>
-
-        <div className="footer">
-          <p className="footer-text">💬 Para separar tu número, contáctanos</p>
-          <p className="footer-copyright">Gran Rifa Pro Ayuda Social © 2024</p>
         </div>
       </div>
     </div>
