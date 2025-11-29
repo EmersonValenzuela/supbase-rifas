@@ -34,6 +34,28 @@ const RifaApp = () => {
     loadData();
   }, []);
 
+  useEffect(() => {
+  const channel = supabase
+    .channel('rifa-realtime')
+    .on(
+      'postgres_changes',
+      {
+        event: '*',
+        schema: 'public',
+        table: 'numeros_vendidos'
+      },
+      (payload) => {
+        console.log('Cambio detectado en tiempo real:', payload);
+        loadData(); // refresca la UI automáticamente
+      }
+    )
+    .subscribe();
+
+  return () => {
+    supabase.removeChannel(channel);
+  };
+}, []);
+
   // Cargar datos
   const loadData = async () => {
     try {
