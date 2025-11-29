@@ -514,7 +514,7 @@ const VistaPublica = ({ vendedores, numerosVendidos }) => {
       <div className="content-wrapper">
         <div className="header-card">
           <div className="header-content">
-            <div className="badge">📅 Sorteo: Domingo 05 de Diciembre, 2025</div>
+            <div className="badge">📅 Sorteo: Viernes 05 de Diciembre, 2025</div>
             <h1 className="title">Gran Rifa Pro Ayuda Social</h1>
             <p className="subtitle">¡Participa y gana increíbles premios! 🎁</p>
             <div className="info-row">
